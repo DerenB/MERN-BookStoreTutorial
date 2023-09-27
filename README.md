@@ -6,6 +6,7 @@
   - `npm init -y`
 - Add Packages
   - `npm i express nodemon`
+  - `npm i mongoose`
 - Add to package.json
   - `"type": "module"`
 - Add scripts to package.json
