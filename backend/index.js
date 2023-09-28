@@ -32,7 +32,6 @@ app.post('/books', async (request, response) => {
             author: request.body.author,
             publishYear: request.body.publishYear
         };
-        console.log(newBook);
 
         // Creates book
         const book = await Book.create(newBook);
@@ -51,7 +50,10 @@ app.get('/books', async (request, response) => {
         const books = await Book.find({});
         console.log(books);
 
-        return response.status(200).json(books);
+        return response.status(200).json({
+            count: books.length,
+            data: books
+        });
     } catch (error) {
         console.log(error.message);
         response.status(500).send({ message: error.message });
