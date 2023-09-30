@@ -91,3 +91,31 @@ app.use(
   })
 );
 ```
+
+# Frontend Creation
+
+- Create Frontend with vite
+  - `npm create vite@latest`
+  - Type in project name
+  - Select React
+  - Select JavaScript
+- `cd` into frontend folder
+  - `npm i`
+- Add Tailwind
+  - Go to their website
+  - Getting Started > Framework Guides > Vite
+  - [Follow the Instructions](https://tailwindcss.com/docs/guides/vite)
+- Install Tailwind CSS
+  - `npm install -D tailwindcss postcss autoprefixer`
+  - `npx tailwindcss init -p`
+    - Creates `tailwind.config.js` & `postcss.config.js`
+  - Paste code into config
+  - Paste code into `index.css`
+  - Delete file `App.css`
+  - Delete everything in `App.jsx`
+- Test Project works
+  - `npm run dev`
+
+### React Router
+
+- `npm i react-router-dom`
