@@ -101,6 +101,8 @@ app.use(
   - Select JavaScript
 - `cd` into frontend folder
   - `npm i`
+  - `npm i react-router-dom`
+  - `npm i axios react-icons`
 - Add Tailwind
   - Go to their website
   - Getting Started > Framework Guides > Vite
@@ -118,4 +120,4 @@ app.use(
 
 ### React Router
 
-- `npm i react-router-dom`
+- 
